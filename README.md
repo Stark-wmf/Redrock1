@@ -47,7 +47,8 @@ public class Legend {
     public void setHomeland(String homeland) {
         this.homeland = homeland;
     }
-    public Legend(String name,int damage, char gender, String homeland, int magic) {
+
+    public Legend(String name, int damage, char gender, String homeland, int magic) {
         this.name = name;
         this.damage = damage;
         this.gender = gender;
@@ -57,4 +58,15 @@ public class Legend {
     }
 
 
+    public static void main(String[] args) {
+        Legend hc = new Legend("hc", 999, '男', "cqupt", 998);
+
+
+        System.out.println("name:" + hc.getName());
+        System.out.println("homeland:" + hc.getHomeland());
+        System.out.println("gender:" + hc.getGender());
+        System.out.println("damage:" + hc.getDamage());
+        System.out.println("magic:" + hc.getMagic());
+
+    }
 }
