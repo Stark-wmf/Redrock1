@@ -1,0 +1,43 @@
+public class DAXIE {
+    //level 1 方法三
+    public static void main(String args[]) {
+
+        String s1 = "acbdw";
+        String s2 = "1269547";
+        String s3 = "AASIDX";
+        String s4 = "AIUydjs";
+        String s5 = "12sjaA";
+        String s6 = "3819247";
+        String s7 = "ausSHSzio";
+        String s8 = "IUFISsi";
+        String s9 = s1 + "," + s2 + "," + s3 + "," + s4 + "," + s5 + "," + s6 + "," + s7 + "," + s8;
+        System.out.println(s9);
+        System.out.println(isAb(s1));
+        System.out.println(isAb(s2));
+        System.out.println(isAb(s3));
+        System.out.println(isAb(s4));
+        System.out.println(isAb(s5));
+        System.out.println(isAb(s6));
+        System.out.println(isAb(s7));
+        System.out.println(isAb(s8));
+
+
+    }
+
+    public static Boolean isAb(String word) {
+
+        char[] array = word.toCharArray();
+        for (int i = 0; i < array.length; i++) {
+
+            char c = word.charAt(i);
+            if (!Character.isUpperCase(c)) {
+
+                return false;
+            }
+
+        }
+        return true;
+
+
+    }
+}
