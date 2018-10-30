@@ -1,0 +1,43 @@
+public class SHUZI {
+    //level 1 方法二
+    public static void main(String args[]) {
+
+        String s1 = "acbdw";
+        String s2 = "1269547";
+        String s3 = "AASIDX";
+        String s4 = "AIUydjs";
+        String s5 = "12sjaA";
+        String s6 = "3819247";
+        String s7 = "ausSHSzio";
+        String s8 = "IUFISsi";
+        String s9 = s1 + "," + s2 + "," + s3 + "," + s4 + "," + s5 + "," + s6 + "," + s7 + "," + s8;
+        System.out.println(s9);
+        System.out.println(isAcronym(s1));
+        System.out.println(isAcronym(s2));
+        System.out.println(isAcronym(s3));
+        System.out.println(isAcronym(s4));
+        System.out.println(isAcronym(s5));
+        System.out.println(isAcronym(s6));
+        System.out.println(isAcronym(s7));
+        System.out.println(isAcronym(s8));
+
+
+    }
+
+    public static Boolean isAcronym(String word) {
+
+        char[] array = word.toCharArray();
+        for (int i = 0; i < array.length; i++) {
+
+            char c = word.charAt(i);
+            if (!Character.isLowerCase(c)) {
+
+                return false;
+            }
+
+        }
+        return true;
+
+
+    }
+}
