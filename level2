@@ -1,0 +1,86 @@
+public class Animal {
+//level 2
+        private String name;
+        private String homeland;
+        private int height;
+
+        public String getName () {
+            return name;
+        }
+        public void setName (String name){
+            this.name = name;
+        }
+        public String getHomeland () {
+            return homeland;
+        }
+        public void setHomeland (String homeland){
+            this.homeland = homeland;
+        }
+        public int getHeight () {
+            return height;
+        }
+        public void setHeight ( int height){
+            this.height = height;
+        }
+
+    }
+class Animal233 extends Animal {
+    public String getName2() {
+        return super.getName() + "  特征  ";
+    }
+    public String Tezheng() {
+        return super.getHomeland() + "  智商  ";
+    }
+    public int Zhishang() {
+        return super.getHeight() + 10;
+    }
+}
+class Animal666 extends Animal {
+    public String getName3() {
+        return super.getName() + "  爱吃  ";
+    }
+    public String Tezheng1() {
+        return super.getHomeland() + "  体重  ";
+    }
+    public int Zhishang1() {
+        return super.getHeight() + 10;
+    }
+}
+
+class Animal1 extends Animal {
+
+    public String getName1() {
+        return super.getName() + "  来自  ";
+    }
+
+
+    public String getHomeland1() {
+        return super.getHomeland() + "  身高  ";
+    }
+
+
+    public int getHeight1() {
+        return super.getHeight() + 10;
+    }
+
+
+    public static void main(String args[]) {
+        Animal1 laohu = new Animal1();
+        Animal233 xiongmao = new Animal233();
+        Animal666 mao = new Animal666();
+        mao.setName("猫猫");
+        mao.setHomeland("小鱼");
+        mao.setHeight(20);
+        xiongmao.setName("熊猫");
+        xiongmao.setHomeland("可爱");
+        xiongmao.setHeight(240);
+
+        laohu.setHomeland("中国");
+        laohu.setHeight(100);
+        laohu.setName("老虎");
+        System.out.println(laohu.getName1() + laohu.getHomeland1() + laohu.getHeight1());
+        System.out.println(mao.getName3()+mao.Tezheng1()+mao.Zhishang1());
+        System.out.println(xiongmao.getName2()+xiongmao.Tezheng()+xiongmao.Zhishang());
+    }
+
+}
