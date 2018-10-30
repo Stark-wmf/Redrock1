@@ -1,0 +1,41 @@
+public class Redstring {
+    //level 1 方法一
+    public static void main(String args[]) {
+
+        String s1 = "acbdw";
+        String s2 = "1269547";
+        String s3 = "AASIDX";
+        String s4 = "AIUydjs";
+        String s5 = "12sjaA";
+        String s6 = "3819247";
+        String s7 = "ausSHSzio";
+        String s8 = "IUFISsi";
+        String s9 = s1 + "," + s2 + "," + s3 + "," + s4 + "," + s5 + "," + s6 + "," + s7 + "," + s8;
+        System.out.println(s9);
+        System.out.println(isNumber(s1));
+        System.out.println(isNumber(s2));
+        System.out.println(isNumber(s3));
+        System.out.println(isNumber(s4));
+        System.out.println(isNumber(s5));
+        System.out.println(isNumber(s6));
+        System.out.println(isNumber(s7));
+        System.out.println(isNumber(s8));
+
+    }
+
+    public static Boolean isNumber(String str) {
+
+        char[] array = str.toCharArray();
+        for (int i = 0; i < array.length; i++) {
+            if (array[0] < '0' || array[0] > '9') {
+
+                return false;
+            }
+
+        }
+        return true;
+
+
+
+    }
+}
